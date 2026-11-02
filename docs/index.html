@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US Company Helper: copy your EIN and US address in one click</title>
+    <meta name="description" content="A free Chrome extension for founders abroad. Keep your US company's name, EIN, address and phone in your browser and copy each with one click." />
+    <link rel="canonical" href="https://medvizo-inc.github.io/us-company-helper/" />
+    <link rel="icon" href="assets/favicon.png" />
+    <meta property="og:title" content="US Company Helper: copy your EIN and US address in one click" />
+    <meta property="og:description" content="A free Chrome extension for founders abroad. Your company's details stay in your browser." />
+    <meta property="og:image" content="https://medvizo-inc.github.io/us-company-helper/assets/screenshot.png" />
+    <meta property="og:type" content="website" />
+    <style>
+      :root {
+        --bg: #f9f8f4;
+        --card: #ffffff;
+        --text: #0c1b3a;
+        --muted: #545d70;
+        --line: #e6e4dd;
+        --navy: #0b1630;
+        --brass: #e0ac3c;
+        --brass-text: #7a5a10;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b1630;
+          --card: #112040;
+          --text: #f4f2ec;
+          --muted: #a7afc2;
+          --line: #22335a;
+          --brass-text: #e9c26d;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      a { color: var(--brass-text); }
+      .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+      header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+      header .wrap { display: flex; align-items: center; gap: 12px; }
+      header img { width: 32px; height: 32px; border-radius: 6px; }
+      header strong { font-size: 16px; }
+      .hero { padding: 56px 0 28px; }
+      .eyebrow { color: var(--brass-text); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 10px; }
+      h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 16px; }
+      .lede { color: var(--muted); font-size: 19px; max-width: 640px; margin: 0 0 26px; }
+      .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn { display: inline-block; padding: 11px 18px; border-radius: 10px; font-weight: 600; text-decoration: none; border: 1px solid var(--line); color: var(--text); background: var(--card); }
+      .btn.primary { background: var(--brass); border-color: var(--brass); color: #0c1b3a; }
+      .shot { margin: 34px 0 10px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+      .shot img { display: block; width: 100%; height: auto; }
+      section { padding: 34px 0; border-top: 1px solid var(--line); }
+      h2 { font-size: 24px; letter-spacing: -.01em; margin: 0 0 14px; }
+      ul, ol { padding-left: 22px; margin: 0; }
+      li { margin: 6px 0; }
+      code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 15px; }
+      dl { margin: 0; }
+      dt { font-weight: 650; margin-top: 18px; }
+      dd { margin: 4px 0 0; color: var(--muted); }
+      footer { padding: 30px 0 46px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+      footer p { margin: 6px 0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <img src="assets/icon-128.png" alt="" />
+        <strong>US Company Helper</strong>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="hero">
+        <p class="eyebrow">Free Chrome extension</p>
+        <h1>Your US company's details, one click to copy.</h1>
+        <p class="lede">
+          Running a US company from abroad means typing the same EIN, address and phone number into bank forms,
+          Stripe, Amazon and tax forms again and again. Keep them in your browser and copy each one with a click.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/medvizo-inc/us-company-helper#install">Install it</a>
+          <a class="btn" href="https://github.com/medvizo-inc/us-company-helper">View the source on GitHub</a>
+        </div>
+        <div class="shot">
+          <img src="assets/screenshot.png" width="1280" height="800" alt="The extension's popup with a company name, EIN, address, US phone number and a custom state filing ID, each with a Copy button" />
+        </div>
+      </div>
+
+      <section>
+        <h2>What it holds</h2>
+        <ul>
+          <li>Company name</li>
+          <li>EIN, set out as 12-3456789 when you type nine digits</li>
+          <li>Corporate address</li>
+          <li>US phone number</li>
+          <li>Up to 20 fields of your own, such as a state filing ID or your registered agent's name</li>
+        </ul>
+      </section>
+
+      <section id="install">
+        <h2>Install</h2>
+        <p>The Chrome Web Store listing is in review. Until it is live, load it from this repository:</p>
+        <ol>
+          <li>Download the repository as a ZIP from <a href="https://github.com/medvizo-inc/us-company-helper">GitHub</a> and unzip it.</li>
+          <li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong>.</li>
+          <li>Click <strong>Load unpacked</strong> and choose the <code>extension</code> folder.</li>
+          <li>Pin it from the puzzle-piece menu.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Your details stay on your computer</h2>
+        <p>
+          The extension saves only to your browser's local storage. It makes no network requests, has no account,
+          and asks for one permission, <code>storage</code>, so it can't read or change any website. Removing the
+          extension deletes what you saved. The full <a href="privacy.html">privacy page</a> says the same in more detail,
+          and the <a href="https://github.com/medvizo-inc/us-company-helper/tree/main/extension">source</a> is short enough to read.
+        </p>
+      </section>
+
+      <section>
+        <h2>Questions</h2>
+        <dl>
+          <dt>Where do I get an EIN if I don't have a Social Security Number?</dt>
+          <dd>The IRS issues one to a foreign-owned company on Form SS-4, by fax or phone. BaseAcross has a guide: <a href="https://baseacross.com/ein">getting an EIN without an SSN</a>.</dd>
+          <dt>Can I use my registered agent's address as my corporate address?</dt>
+          <dd>Only as the company's legal address with the state. Banks such as Mercury don't accept it as the business's address. More in <a href="https://baseacross.com/registered-agent">what a registered agent does</a>.</dd>
+          <dt>Does it sync between computers?</dt>
+          <dd>No. It uses local storage on purpose, so your details never leave the computer you typed them on.</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>Made by <a href="https://baseacross.com">BaseAcross</a>, which forms and runs US LLCs and C-corps for founders outside the US.</p>
+        <p><a href="https://baseacross.com/tools">Free tools for US company owners</a> · <a href="privacy.html">Privacy</a> · <a href="https://github.com/medvizo-inc/us-company-helper">Source</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

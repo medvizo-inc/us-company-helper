@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "US Corporate Address & EIN Helper",
+  "short_name": "US Company Helper",
+  "version": "1.0.1",
+  "description": "Keep your US company's name, EIN, address and phone in your browser, and copy each one with a click.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "US Corporate Address & EIN Helper",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

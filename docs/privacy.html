@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy: US Company Helper</title>
+    <meta name="description" content="What the US Company Helper Chrome extension stores, where, and what it never sends." />
+    <link rel="canonical" href="https://medvizo-inc.github.io/us-company-helper/privacy.html" />
+    <link rel="icon" href="assets/favicon.png" />
+    <style>
+      :root { --bg: #f9f8f4; --text: #0c1b3a; --muted: #545d70; --line: #e6e4dd; --brass-text: #7a5a10; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #0b1630; --text: #f4f2ec; --muted: #a7afc2; --line: #22335a; --brass-text: #e9c26d; } }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      a { color: var(--brass-text); }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+      h1 { font-size: 32px; letter-spacing: -.02em; margin: 0 0 6px; }
+      h2 { font-size: 20px; margin: 30px 0 8px; }
+      .muted { color: var(--muted); }
+      footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="./">← US Company Helper</a></p>
+      <h1>Privacy</h1>
+      <p class="muted">Updated 3 November 2026</p>
+
+      <h2>What it stores</h2>
+      <p>What you type into the extension: your company name, EIN, corporate address, US phone number, and the name and value of any field you add.</p>
+
+      <h2>Where it is stored</h2>
+      <p>In your browser's local storage for the extension (<code>chrome.storage.local</code>), on the computer you typed it on. It is not synced to your Google account or to other computers.</p>
+
+      <h2>What it sends</h2>
+      <p>Nothing. The extension makes no network requests. Nobody, BaseAcross included, receives what you store. The extension asks for one permission, <code>storage</code>, and cannot read or change the websites you visit.</p>
+
+      <h2>Copying</h2>
+      <p>When you press Copy, the value is put on your computer's clipboard, where any app you paste into can read it, as with anything you copy.</p>
+
+      <h2>Deleting</h2>
+      <p>Clear a field, remove a field you added, or remove the extension from Chrome to delete everything it stored.</p>
+
+      <h2>Questions</h2>
+      <p>Ask through <a href="https://baseacross.com/contact">baseacross.com/contact</a>. BaseAcross's privacy notice for its own website and service is at <a href="https://baseacross.com/privacy">baseacross.com/privacy</a>.</p>
+
+      <footer>Made by <a href="https://baseacross.com">BaseAcross</a>.</footer>
+    </main>
+  </body>
+</html>
